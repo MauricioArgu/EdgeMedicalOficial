@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.edgemedicaloficial.Activity.ProfileActivity">
+
+    <RelativeLayout
+        android:id="@+id/rellay1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_bar1"
+        android:paddingBottom="20dp">
+
+        <RelativeLayout
+            android:id="@+id/imgUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/circle_border">
+
+
+
+        </RelativeLayout>
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="25dp"
+        android:layout_marginStart="25dp"
+        android:layout_below="@+id/rellay1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"/>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="4dp">
+
+        <EditText
+            android:id="@+id/descripcion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:padding="5dp"
+            android:hint="Description"
+            android:gravity="top"
+            android:background="@null"
+            android:lines="8"
+            android:inputType="text|textMultiLine"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/btnFecha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Date"
+            android:background="@drawable/bg_ui1"
+            android:layout_below="@+id/cv"
+            android:layout_marginTop="20dp"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"/>
+
+        <EditText
+            android:id="@+id/txtFecha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginTop="20dp"
+            android:visibility="invisible"
+            android:layout_below="@+id/cv"
+            android:layout_toEndOf="@+id/btnFecha"
+            android:textAlignment="center"
+            android:enabled="false"/>
+
+
+        <Spinner
+            android:id="@+id/spnHoras"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:visibility="gone"
+            android:layout_below="@+id/btnFecha"/>
+
+        <Button
+            android:id="@+id/btnHora"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Time"
+            android:enabled="false"
+            android:background="@drawable/bg_ui1"
+            android:layout_below="@+id/spnHoras"
+            android:textColor="@color/colorWhite"
+            android:textAllCaps="false"
+            android:visibility="gone"
+            android:layout_marginTop="20dp"
+            />
+
+        <EditText
+            android:id="@+id/txtHora"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginTop="20dp"
+            android:textAlignment="center"
+            android:visibility="invisible"
+            android:layout_below="@+id/txtFecha"
+            android:layout_toEndOf="@+id/btnFecha"
+            android:enabled="false"/>
+
+        <Button
+            android:id="@+id/btAdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/bg_ui1"
+            android:text="Add Appointment"
+            android:layout_marginBottom="25dp"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

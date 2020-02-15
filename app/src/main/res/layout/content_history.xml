@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.edgemedicaloficial.Activity.HistoryActivity">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+
+                <TextView
+                    android:id="@+id/txtProcess"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="In Process"
+                    android:visibility="gone"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="25sp"
+                    android:layout_marginTop="10dp"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/list_process"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="vertical"
+                    android:visibility="visible"
+                    android:layout_below="@id/txtProcess"/>
+
+                <TextView
+                    android:id="@+id/txtPending"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Pending"
+                    android:visibility="gone"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorBlack"
+                    android:layout_below="@+id/list_process"
+                    android:textSize="25sp"
+                    android:layout_marginTop="10dp"/>
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/list_pending"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scrollbars="vertical"
+                    android:visibility="visible"
+                    android:layout_below="@id/txtPending"/>
+
+                <TextView
+                    android:id="@+id/txtDone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:text="Done"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorBlack"
+                    android:layout_below="@+id/list_pending"
+                    android:textSize="25sp"
+                    android:layout_marginTop="10dp"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/list_done"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="vertical"
+                    android:visibility="visible"
+                    android:layout_below="@id/txtDone"/>
+
+
+
+        </RelativeLayout>
+
+        </ScrollView>
+
+
+</RelativeLayout>

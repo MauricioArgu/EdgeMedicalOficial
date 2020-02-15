@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.edgemedicaloficial.Activity.ProfileActivity">
+
+    <RelativeLayout
+        android:id="@+id/rellay1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_bar1"
+        android:paddingBottom="20dp">
+
+        <RelativeLayout
+            android:id="@+id/imgUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/circle_border">
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/userPhoto"
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:src="@drawable/man"
+                app:civ_shadow="true"
+                app:civ_shadow_radius="10"
+                android:scaleType="centerInside"
+                />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txtUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgUser"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15sp"
+            android:fontFamily="sans-serif-light"
+            android:text="Juan Perez"
+            android:textColor="@color/colorWhite"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/txtEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtUser"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="sans-serif"
+            android:text="25 Years"
+            android:textColor="@color/colorWhite"
+            android:textSize="14sp" />
+
+
+        <TextView
+            android:id="@+id/txtBirth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtEmail"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="sans-serif"
+            android:text="San Salvador, El Salvador"
+            android:textColor="@color/colorWhite"
+            android:textSize="14sp" />
+
+
+    </RelativeLayout>
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="45dp"
+        android:layout_marginStart="45dp"
+        android:layout_below="@+id/rellay1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"/>
+
+        <Button
+            android:id="@+id/btCredit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="25dp"
+            android:background="@drawable/bg_ui1"
+            android:text="Credit Card Information"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite" />
+
+        <Button
+            android:id="@+id/btUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="100dp"
+            android:background="@drawable/bg_ui1"
+            android:text="Update Profile Information"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

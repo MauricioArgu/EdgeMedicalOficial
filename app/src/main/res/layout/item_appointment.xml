@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardViewDoc"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginBottom="20dp"
+    card_view:cardCornerRadius="8dp"
+    card_view:cardElevation="6dp"
+    card_view:cardMaxElevation="6dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp">
+
+        <TextView
+            android:id="@+id/titulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/img"
+            android:textColor="@color/colorPrimary"
+            android:text="Lorem Ipsum"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:lines="2"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/doctor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#4b4a4a"
+            android:text="Lorem Ipsum"
+            android:layout_below="@+id/titulo"
+            android:layout_marginTop="5dp"
+            android:textSize="13sp"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/fecha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#4b4a4a"
+            android:text="Lorem Ipsum"
+            android:layout_below="@+id/titulo"
+            android:layout_marginTop="5dp"
+            android:textAlignment="textEnd"
+            android:layout_marginEnd="10dp"
+            android:textSize="13sp"
+            android:layout_toRightOf="@+id/doctor"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/descripcion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/doctor"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="10dp"
+            android:text="Lorem Ipsum"
+            android:textColor="#4b4a4a"
+            android:textSize="13sp" />
+
+
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

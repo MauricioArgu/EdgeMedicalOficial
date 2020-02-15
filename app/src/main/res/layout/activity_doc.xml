@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.edgemedicaloficial.Activity.ProfileActivity">
+
+    <RelativeLayout
+        android:id="@+id/rellay1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_bar"
+        android:paddingBottom="20dp">
+
+        <RelativeLayout
+            android:id="@+id/imgUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/circle_border">
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/userPhoto"
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:src="@drawable/doctor"
+                app:civ_shadow="true"
+                app:civ_shadow_radius="10"
+                android:scaleType="centerInside"
+                />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txtDocName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgUser"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:fontFamily="sans-serif-light"
+            android:text="Juan Perez"
+            android:textAlignment="center"
+            android:textColor="@color/colorWhite"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/txtEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtDocName"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="sans-serif"
+            android:text="Doctor@test.com"
+            android:textColor="@color/colorWhite"
+            android:textSize="14sp" />
+
+
+    </RelativeLayout>
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="45dp"
+        android:layout_marginStart="45dp"
+        android:layout_below="@+id/rellay1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"/>
+
+        <Button
+            android:id="@+id/btAppointment"
+            android:layout_marginTop="45sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_ui"
+            android:text="Add Appointment"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite" />
+
+
+
+        <Button
+            android:id="@+id/btCall"
+            android:layout_below="@+id/btAppointment"
+            android:layout_marginTop="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_ui"
+            android:text="Call"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
