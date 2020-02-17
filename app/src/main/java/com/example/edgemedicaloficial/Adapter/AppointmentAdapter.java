@@ -31,9 +31,7 @@ public class AppointmentAdapter extends RecyclerView.Adapter<AppointmentAdapter.
     public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener
     {
         public TextView titulo;
-        public TextView descripcion;
         public TextView fecha;
-        public TextView doctor;
         Appointment item;
 
         public ViewHolder(@NonNull View v) {
@@ -41,19 +39,15 @@ public class AppointmentAdapter extends RecyclerView.Adapter<AppointmentAdapter.
 
             v.setOnClickListener(this);
             titulo = v.findViewById(R.id.titulo);
-            descripcion = v.findViewById(R.id.descripcion);
             fecha = v.findViewById(R.id.fecha);
-            doctor = v.findViewById(R.id.doctor);
         }
 
         public void setData(Appointment item)
         {
             this.item = item;
 
-            titulo.setText(item.getTitulo());
-            descripcion.setText(item.getDescripcion());
+            titulo.setText("Dr: " + item.getDoctor());
             fecha .setText(item.getFecha());
-            doctor.setText(item.getDoctor());
         }
 
         @Override

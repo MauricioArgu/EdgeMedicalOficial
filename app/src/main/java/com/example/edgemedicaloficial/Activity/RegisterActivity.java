@@ -418,7 +418,6 @@ public class RegisterActivity extends AppCompatActivity implements AdapterView.O
 
                 if (Res.getErrorCode() == 0)
                 {
-                    Toast.makeText(RegisterActivity.this, "Account Created Successfully", Toast.LENGTH_SHORT).show();
                     startTermsActivity();
                 }
                 else if (Res.getErrorCode() == 2)

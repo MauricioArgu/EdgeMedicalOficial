@@ -31,17 +31,6 @@
             android:layout_marginLeft="10dp"/>
 
         <TextView
-            android:id="@+id/doctor"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="#4b4a4a"
-            android:text="Lorem Ipsum"
-            android:layout_below="@+id/titulo"
-            android:layout_marginTop="5dp"
-            android:textSize="13sp"
-            android:layout_marginLeft="10dp"/>
-
-        <TextView
             android:id="@+id/fecha"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -52,23 +41,7 @@
             android:textAlignment="textEnd"
             android:layout_marginEnd="10dp"
             android:textSize="13sp"
-            android:layout_toRightOf="@+id/doctor"
             android:layout_marginLeft="10dp"/>
-
-        <TextView
-            android:id="@+id/descripcion"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/doctor"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginTop="5dp"
-            android:layout_marginStart="10dp"
-            android:text="Lorem Ipsum"
-            android:textColor="#4b4a4a"
-            android:textSize="13sp" />
-
-
 
 
     </RelativeLayout>
